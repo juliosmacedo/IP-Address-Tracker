@@ -1,6 +1,8 @@
 body {
-
+    margin: 0;
     font-family: 'Rubik';
+    min-height: 100vh;
+    position: relative;
 }
 
 .infos {
@@ -12,7 +14,10 @@ body {
     margin: 0 15vh;
     position: relative;
     bottom: 10vh;
+    z-index: 5;
 }
+
+
 
 header {
     background-image: url(./images/pattern-bg.png);
@@ -22,7 +27,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 4vh;
-    height: 30vh;
+    height: 25vh;
 }
 
 
@@ -53,7 +58,7 @@ input {
     background: #ffffff;
     border: 0;
     border-radius: 15px 0 0 15px;
-    color: white;
+    font-family: 'Rubik';
     padding: 20px;
     width: 90%;
   }
@@ -88,8 +93,19 @@ input {
     max-height: 1vh;
   }
 
-  #map {
-    height: 70vh;
-    z-index: -1;
-    bottom: 20vh;
+//   #map {
+//     max-height: none;
+//     display: block;
+//     height: 500px;
+//     z-index: -1;
+//     bottom: 20vh;
+// }
+
+#map{
+    height: 75vh;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
 }
