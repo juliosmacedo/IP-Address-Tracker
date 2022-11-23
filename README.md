@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/juliosmacedo/IP-Address-Tracker)
-- Live Site URL: [Add live site URL here](https://juliosmacedo.github.io/IP-Address-Tracker/)
+- Solution URL: [GitHub Repo](https://github.com/juliosmacedo/IP-Address-Tracker)
+- Live Site URL: [Live Site](https://juliosmacedo.github.io/IP-Address-Tracker/)
 
 ## My process
 
