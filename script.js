@@ -90,9 +90,17 @@ window.onload = function () {
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map)
 
+        var icon = L.icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Google_Maps_pin.svg/585px-Google_Maps_pin.svg.png',      
+          iconSize:     [18, 30], // size of the icon
+          shadowSize:   [50, 64], // size of the shadow
+          iconAnchor:   [11, 85], // point of the icon which will correspond to marker's location
+          shadowAnchor: [4, 62],  // the same for the shadow
+          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+      });
 
         //creates the marker and places it at the given coordinates
-        marker = L.marker([latitude, longitude]).addTo(map);
+        marker = L.marker([latitude, longitude], {icon: icon}).addTo(map);
 
         marker.bindPopup(location).openPopup();
     }
